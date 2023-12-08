@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cade o link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* Ajustes para telas menores que 600 pixels */
+            button {
+                margin: 5px 0; /* Adiciona espaçamento vertical */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button id="button1" onclick="redirectToLink('link1')">Controle de medidas</button>
+        <button id="button2" onclick="redirectToLink('link2')">Formulário de gastos</button>
+    </div>
+
+    <script>
+        function redirectToLink(link) {
+            // Substitua os links abaixo pelos links desejados
+            const links = {
+                'link1': 'https://forms.gle/Fa2osWk4DcmWUG2k8',
+                'link2': 'https://forms.gle/3iUtHPyh1foVPxJYA'
+            };
+
+            window.location.href = links[link];
+        }
+    </script>
+</body>
+</html>
